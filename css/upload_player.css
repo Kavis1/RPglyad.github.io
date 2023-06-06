@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+::-webkit-scrollbar{
+  overflow: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: white;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+header {
+  background-color: #929292;
+  font-weight: bold;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  height: 125px;
+  border-bottom: 4px solid black;
+}
+.more {
+  margin-left: 2%;
+}
+.more img {
+  height: 50px;
+  width: 50px;
+}
+.title {
+  text-align: center;
+  margin-top: 0;
+  margin: auto;
+}
+.title img {
+  height: 90px;
+}
+.mode {
+  margin: 0;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+.mode img {
+  height: 50px;
+  width: 50px;
+  margin: 2px;
+}
+.mode-menu img {
+  height: 50px;
+  width: 50px;
+}
+.mode-menu {
+  display: none;
+}
+.mode-menu.show {
+  display: flex;
+  align-items: center;
+}
+.user {
+  margin-right: 2%;
+}
+.user img {
+  width: 50px;
+  height: 50px;
+}
+
+.more-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform 0.3s;
+}
+.more-menu.show {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #929292;
+  border-bottom: 3px solid black;
+  height: 62px;
+  font-size: 15px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1.2s;
+}
+
+.home {
+  width: 200px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.player_section {
+  margin-top: 1%;
+}
+
+.player_container {
+    color: white;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    position: relative;
+}
+
+.player_container.error::after {
+  display: none;
+}
+
+.player_container.error p {
+  font-size: 50px;
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.player_container::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.video_title {
+  font-weight: bold;
+  font-size: 50px;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin-top: 1%;
+}
+
+button {
+  margin-left: 2%;
+  height: 50px;
+  border-radius: 20%;
+  border: 1px solid black;
+  align-items: center;
+  background-color: #929292;
+}
+
+button img {
+  height: 35px;
+  width: 35px;
+}
+
+.total_rating {
+  font-size: 45px;
+  text-align: center;
+  align-items: center;
+  margin-left: 7%;
+}
+
+.upload_button {
+  margin-left: 2%;
+  width: 200px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  text-align: center;
+  justify-content: center;
+}
+
+.upload_button img {
+  height: 30px;
+  width: 30px;
+}
+
+.video_description {
+  font-size: 20px;
+  margin-left: 2%;
+}
+
+footer {
+  text-align: center;
+  background-color: #929292;
+  border-top: 3px solid black;
+  height: 40px;
+  font-size: 22px;
+}
+
+.more-menu:hover {
+  height: 70px;
+  transition: 0.3s;
+}
+
+.more:hover {
+  cursor: pointer;
+  scale: 105%;
+  opacity: 85%;
+}
+
+.mode img:hover {
+  cursor: pointer;
+  scale: 105%;
+}
+
+.user:hover {
+  scale: 105%;
+}
+
+.home:hover {
+  scale: 110%;
+  border: 3px solid black;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.upload_button:hover {
+  cursor: pointer;
+  scale: 105%;
+}
+
+.upload_button:active {
+  opacity: 0.8;
+  scale: 110%;
+}

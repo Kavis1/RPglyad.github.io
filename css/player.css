@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+::-webkit-scrollbar{
+    overflow: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-color: white;
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    background-color: #929292;
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    height: 125px;
+    border-bottom: 4px solid black;
+}
+.more{
+    margin-left: 2%;
+}
+.more img{
+    height: 50px;
+    width: 50px;
+}
+.title {
+    text-align: center;
+    margin-top: 0;
+    margin: auto;
+}
+.title img{
+    height: 90px;
+}
+.mode{
+    margin: 0;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;  
+}
+.mode img{
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+}
+.mode-menu img{
+    height: 50px;
+    width: 50px;
+}
+.mode-menu {
+    display: none;
+}
+.mode-menu.show {
+    display: flex;
+    align-items: center;
+}
+.user {
+    margin-right: 2%;
+}
+.user img {
+    width: 50px;
+    height: 50px;
+}
+
+.more-menu {
+    display: none;
+}
+.more-menu.show {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #929292;
+    border-bottom: 3px solid black;
+    height: 62px;
+    font-size: 15px;
+}
+
+.home{
+    width: 200px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+.upload{
+    width: 200px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.upload img{
+    margin-top: 5%;
+    margin-right: 10%;
+    height: 20px;
+    width: 20px;
+}
+
+.player_section{
+    margin-top: 1%;
+}
+.player_container{
+    width: 100%;
+    scale: 101%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+video{
+    margin-bottom: 0.1%;
+    margin-top: 0.1%;
+    height: auto;
+    width: 75%;
+}
+.video_title{
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+
+    text-align: left;
+    margin-top: 1%;
+}
+button{
+    margin-left: 2%;
+    height: 50px;
+    border-radius: 20%;
+    border: 1px solid black;
+    align-items: center;
+    background-color: #929292;
+}
+button img{
+    height: 35px;
+    width: 35px;
+}
+.counter{
+    font-size: 45px;
+    text-align: center;
+    align-items: center;
+    margin-left: 1%;
+}
+.total_rating{
+    font-size: 45px;
+    text-align: center;
+    align-items: center;
+    margin-left: 7%;
+}
+
+.video_description{
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+footer{
+    text-align: center;
+    background-color: #929292;
+    border-top: 3px solid black;
+    height: 40px;
+    font-size: 22px;
+}
+
+.more-menu:hover{
+    height: 70px;
+    transition: 0.3s;
+}
+.more:hover{
+    cursor: pointer;
+    scale: 105%;
+    opacity: 85%;
+}
+.mode img:hover{
+    cursor: pointer;
+    scale: 105%;
+}
+.user:hover{
+    scale: 105%;
+}
+
+.home:hover{
+    scale: 110%;
+    border: 3px solid black;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.upload:hover{
+    scale: 110%;
+    border: 3px solid black;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover{
+    cursor: pointer;
+    scale: 105%;
+}
+button:active{
+    scale: 110%;
+}
+.like_button:active{
+    background-color: green;
+    opacity: 0.8;
+    box-shadow: 1px 1px 35px 1px green;
+}
+.dislike_button:active{
+    background-color: red;
+    opacity: 0.8;
+    box-shadow: 1px 1px 35px 1px red;
+}
