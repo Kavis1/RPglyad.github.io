@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+		<script src="js/navigation.js"></script>
+		<script src="js/search.js"></script>
+		<script src="js/mode.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/x-icon" href="src/interface/Prglyad.ico">
+		<title>glyad</title>
+	</head>
+	<body>
+		<header>
+			<div class="more" onclick="MoreMenu()">
+				<img src="src/interface/more_icon_b.png">
+			</div>
+			<div class="title" onclick="TransitionHome()">
+				<img src="src/interface/logo_b.png">
+			</div>
+
+			<div class="mode" onclick="ModeMenu()">
+				<img src="src/interface/mode_icon.png">	
+				<div class="mode-menu">
+					<div class="light_mode" onclick="DarkMode()">
+						<img src="src/interface/light_mode_icon.png">
+					</div>
+					<div class="dark_mode" onclick="LightMode()">
+						<img src="src/interface/dark_mode_icon.png">
+					</div>
+				</div>
+			</div>
+				
+			<div class="user" onclick="TrollTransition()">
+				<img src="src/interface/icon_b.png">
+			</div>
+			
+		</header>
+		<main>
+			<div class="more-menu">
+			    <div class="search">
+			    	<img src="src/interface/search_icon_b.png">
+			    	<input class="search_input" type="text" id="searchInput" oninput="Search()">
+			    </div>
+			    <div class="home" onclick="TransitionHome()">
+			    	<p>HOME</p>
+			    </div>
+			    <div class="upload" onclick="UploadPlayer()">
+			    	<img src="src/interface/upload_icon_b.png">
+			    	<p>UPLOAD</p>
+			    </div>
+			</div>
+			<section>
+				<div class="preview" onclick="TransitionVideo1()">
+				    <div class="preview_img">
+				        <img src="src/content/preview1.png">
+				    </div>
+				    <p>Caney West Singing "Golden Bathers"</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo2()">
+				    <div class="preview_img">
+				        <img src="src/content/preview2.png">
+				    </div>
+				    <p>Back To The Terminator</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo3()">
+				    <div class="preview_img">
+				        <img src="src/content/preview3.png">
+				    </div>
+				    <p>Among Us: American Psycho Edition</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo4()">
+				    <div class="preview_img">
+				        <img src="src/content/preview4.png">
+				    </div>
+				    <p>GachiPunk 2077</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo5()">
+				    <div class="preview_img">
+				        <img src="src/content/preview5.png">
+				    </div>
+				    <p>Spider-Man 2 gameplay revealed</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo6()">
+				    <div class="preview_img">
+				        <img src="src/content/preview6.png">
+				    </div>
+				    <p>Bat Eating BANANA</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo7()">
+				    <div class="preview_img">
+				        <img src="src/content/preview7.png">
+				    </div>
+				    <p>Spider-Man  Across the Spider-Verse Fan-Trailer in LEGO</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo8()">
+				    <div class="preview_img">
+				        <img src="src/content/preview8.png">
+				    </div>
+				    <p>Fast and Furious/Avengers Epic Crossover</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo9()">
+				    <div class="preview_img">
+				        <img src="src/content/preview9.png">
+				    </div>
+				    <p>Why I'm buying this car!</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo10()">
+				    <div class="preview_img">
+				        <img src="src/content/preview10.png">
+				    </div>
+				    <p>Max Verstappen's Pole Lap 2023 Spanish Grand Prix</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo11()">
+				    <div class="preview_img">
+				        <img src="src/content/preview11.png">
+				    </div>
+				    <p>Metro Boomin, Coi Leray - Self Love (❤️Official Lyric Video)</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo12()">
+				    <div class="preview_img">
+				        <img src="src/content/preview12.png">
+				    </div>
+				    <p>Willem Dafoe Answers the Web's Most Searched Questions | WIRED</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo13()">
+				    <div class="preview_img">
+				        <img src="src/content/preview13.png">
+				    </div>
+				    <p>James May reacts to viral Top Gear TikToks!</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo14()">
+				    <div class="preview_img">
+				        <img src="src/content/preview14.png">
+				    </div>
+				    <p>(Almost)Every adult joke in the Shrek Franchise.</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo15()">
+				    <div class="preview_img">
+				        <img src="src/content/preview15.png">
+				    </div>
+				    <p>The Origin Of Spooder-Man</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo16()">
+				    <div class="preview_img">
+				        <img src="src/content/preview16.png">
+				    </div>
+				    <p>World's Best Drivers Race Cars In REVERSE ⏪</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo17()">
+				    <div class="preview_img">
+				        <img src="src/content/preview17.png">
+				    </div>
+				    <p>I Accidentally Became A Meme: You Can't See John Cena</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo18()">
+				    <div class="preview_img">
+				        <img src="src/content/preview18.png">
+				    </div>
+				    <p>Spider-Man but everyone is Tobey Maguire</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo19()">
+				    <div class="preview_img">
+				        <img src="src/content/preview19.png">
+				    </div>
+				    <p>Passing A Portal Through Itself</p>
+				</div>
+				<div class="preview" onclick="TransitionVideo20()">
+				    <div class="preview_img">
+				        <img src="src/content/preview20.png">
+				    </div>
+				    <p>New BMW 5 Series & 600hp i5 REVEALED!</p>
+				</div>
+					
+			</section>			
+		</main>
+		<footer>
+			©Copyrighted 2023 Mykola Yakymenko
+		</footer>
+	</body>
+</html>
