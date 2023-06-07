@@ -12,7 +12,7 @@ function MoreMenu() {
    dropdownMenu.classList.toggle('show');
 }
 function TransitionVideo1() {
-   window.location.href = "html/player_v1.html";
+   window.location.href = ".../html/player_v1.html";
 }
 function TransitionVideo2() {
    window.location.href = "html/player_v2.html";
